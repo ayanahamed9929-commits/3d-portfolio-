@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0d1117; /* ডার্ক ব্যাকগ্রাউন্ড */
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+}
+
+header h1 {
+    margin-bottom: 5px;
+    color: #58a6ff;
+}
+
+model-viewer {
+    width: 100%;
+    height: 400px;
+    background-color: #161b22;
+    border-radius: 20px;
+    margin-top: 20px;
+    border: 2px solid #30363d;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.7;
+}
