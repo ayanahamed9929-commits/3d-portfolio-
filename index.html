@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayan's 3D Mazda Portfolio</title>
+    
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+    
+    <style>
+        body {
+            margin: 0;
+            background-color: #0d1117;
+            color: white;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .info {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        h1 { color: #58a6ff; margin: 0; }
+
+        /* মডেলের সাইজ এবং স্টাইল */
+        model-viewer {
+            width: 90%;
+            height: 60vh;
+            background-color: #161b22;
+            border-radius: 15px;
+            border: 2px solid #30363d;
+        }
+
+        .ar-button {
+            background-color: #238636;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 5px;
+            margin-top: 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="info">
+        <h1>Ayan's 3D Car</h1>
+        <p>Mazda RX-7 Model</p>
+    </div>
+
+    <model-viewer 
+        src="car.glb" 
+        ar 
+        camera-controls 
+        auto-rotate 
+        shadow-intensity="1" 
+        exposure="1"
+        alt="A 3D model of a car">
+        
+        <button slot="ar-button" class="ar-button">
+            View in AR (ঘরের মেঝেতে দেখো)
+        </button>
+    </model-viewer>
+
+    <script src="script.js"></script>
+</body>
+</html>
